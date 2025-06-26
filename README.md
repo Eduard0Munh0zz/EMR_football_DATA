@@ -33,7 +33,7 @@ O objetivo é garantir que os dados estejam sempre atualizados no site, sem nece
 ## 🖼️ Screenshots
 
 ### Página Inicial
-![Home](assets/homepage.png)
+![Home](images/homepage.png)
 
 ### Estatísticas da Partida
-![Estatísticas](assets/estatisticas.png)
+![Estatísticas](images/estatisticas.png)
