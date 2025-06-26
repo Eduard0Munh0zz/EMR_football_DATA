@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMR Football Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class = "grid-container">
+        
+        <header class = "header">
+            
+            <div class = "logo">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+                </a>
+            </div>
+        
+            <div class = "titulo">
+                <h1><a href="/">EMR Football Data</a></h1>
+            </div>
+        
+            <div class = "social-icons">
+                <a href="https://facebook.com" target="_blank" class = "social-icon"><i class = "fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" class = "social-icon"><i class = "fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class = "social-icon"><i class = "fab fa-instagram"></i></a>
+            </div>
+
+        </header>
+        
+        <nav class = "navhome">Bem Vindo!!!</nav>
+
+        <article class = "L">
+
+            <img src="{{ url_for('static', filename='messi.png') }}" class = "messi">
+
+        </article>
+
+        <article class = "R">
+
+            <img src="{{ url_for('static', filename='CR7.png') }}" class = "cr7">
+
+        </article>
+
+        <main class = "main">
+            
+            <h1>Dados em tempo real de TODOS os jogos!</h1>
+            
+            <h3>Jogos Recentes:</h3>
+        
+            {% for match_id, jogo in jogos.items() %}
+            
+            <section class = "jogo">
+                
+                <table border="1">
+                    
+                    <thead>
+                        
+                        <tr>
+                            <th>Home Team</th>
+                            <th>Score Home</th>
+                            <th>Score Away</th>
+                            <th>Away Team</th>
+                            <th>Tempo de Jogo</th>
+                            <th>Ver detalhes</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>{{ jogo['home'] }}</td>
+                            <td>{{ jogo['score_home'] }}</td>
+                            <td>{{ jogo['score_away'] }}</td>
+                            <td>{{ jogo['away'] }}</td>
+                            <td>{{ jogo['tempo'] }}</td>
+                            <td><a href="/jogo/{{ jogo['Match ID'] }}">Ver detalhes</a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            {% endfor %}
+
+        </main>
+
+        <footer>
+
+            <p>&copy; 2025 <strong>EMR Football Data</strong></p>
+            <p>Todos os direitos reservados.</p>
+            <p>Desenvolvido por <strong>Eduardo Munhoz Ribeiro</strong></p>
+            <p>E-mail para contato: <strong>duardomunhoz@gmail.com</strong></p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
