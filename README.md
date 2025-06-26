@@ -1,5 +1,7 @@
 Sistema de Coleta e Disponibilização de Dados Esportivos na web
 
+Parte do código original foi omitida por conter informações sensíveis. Este repositório apresenta uma versão segura e representativa do projeto.
+
 Este projeto é uma ferramenta de coleta automática de dados esportivos, desenvolvido utilizando a linguagem Python. Ele extrai de forma totalmente automatizada, informações detalhadas como:
 
     • Estatísticas dos jogos em tempo real;
@@ -30,7 +32,7 @@ Para disponibilizar os dados de forma acessível e dinâmica, foi desenvolvido u
 
 O objetivo é garantir que os dados estejam sempre atualizados no site, sem necessidade de intervenção manual, mantendo um fluxo contínuo e eficiente entre coleta, processamento e disponibilização na web.
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Página Inicial
 ![Home](images/homepage.png)
