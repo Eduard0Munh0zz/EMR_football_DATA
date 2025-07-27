@@ -25,10 +25,10 @@ O sistema foi desenvolvido com foco em performance e automação, utilizando:
         ◦ Dados ausentes;
         ◦ Eventuais bloqueios de acesso.
 
-Para disponibilizar os dados de forma acessível e dinâmica, foi desenvolvido um site que exibe as informações dos jogos em tempo real ultilizando o Framework – Flask. A aplicação é hospedada em uma plataforma, e todo o processo de atualização é automatizado:
+Para disponibilizar os dados de forma acessível e dinâmica, foi desenvolvido um site que exibe as informações dos jogos em tempo real ultilizando o Framework - Flask. A aplicação é hospedada em uma plataforma, e todo o processo de atualização é automatizado:
     
     • Uma função monitora o fluxo de deploy, interagindo diretamente com a API da plataforma para disparar novos deploys sempre que a condição for cumprida.
-    • Outra realiza os comandos do git de forma automática, fenviando esses dados ao GitHub, que serve como fonte para os deploys na plataforma.
+    • Outra realiza os comandos do git de forma automática, enviando esses dados ao GitHub, que serve como fonte para os deploys na plataforma.
 
 O objetivo é garantir que os dados estejam sempre atualizados no site, sem necessidade de intervenção manual, mantendo um fluxo contínuo e eficiente entre coleta, processamento e disponibilização na web.
 
