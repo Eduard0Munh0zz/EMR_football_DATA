@@ -12,9 +12,9 @@ Este projeto é uma ferramenta de coleta automática de dados esportivos, desenv
 
 Os dados coletados são salvos em um banco de dados, podendo ser utilizados para diversos fins, como:
     
-    • Análises estatísticas,
-    • Criação de modelos preditivos,
-    • Geração de insights,
+    • Análises estatísticas;
+    • Criação de modelos preditivos;
+    • Geração de insights;
     • Integração com sistemas externos, como bots de trading esportivo, dashboards ou aplicativos.
 
 O sistema foi desenvolvido com foco em performance e automação, utilizando:
